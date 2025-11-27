@@ -25,6 +25,12 @@
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
 
+# Version file - never cache (always check for updates)
+/version.json
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+
 # Enable gzip compression (GitHub Pages does this automatically)
 # This header is informational
 /*
